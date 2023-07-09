@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		let a = parseInt(prompt("Enter the number: "));
+		let b = a;
+		let finalans = a;
+		let count = 0;
+		let c =0;
+		let ans1 = 0;
+
+		while(a>0){
+			c=a%10;
+			a=parseInt(a/10);
+			count++;
+		}
+		
+		while(b>0){
+			c = b%10;
+			let ans = 1; 
+			for(i = 1;i<=count;i++){
+				ans = ans * c;
+			}
+			ans1 = ans1+ans;
+			b=parseInt(b/10);
+		}
+
+		if(ans1==finalans){
+			document.write("it is armstrong");
+		}
+		else{
+			document.write("it is not armstrong");	
+		}
+	</script>
+</body>
+</html>

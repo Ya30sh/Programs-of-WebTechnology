@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		a = prompt("Enter the word");
+		c=a.toLowerCase();
+		j=0;
+		count = 0;
+
+		b = new Array(2);
+
+		b[0] = c.indexOf("a");
+		b[1] = c.lastIndexOf("a");
+
+		document.write(a.slice(b[0]+1,b[1]) + "</br> First index of a is " + b[0] + "</br> Last index Of a is " + b[1]);
+	</script>
+</body>
+</html>

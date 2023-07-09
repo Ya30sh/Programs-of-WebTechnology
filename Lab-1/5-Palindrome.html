@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		let a = prompt("Enter the word");
+		a.toLowerCase();
+		b = "";
+		for(i=(a.length)-1;i>=0;i--){
+			b = b.concat(a.charAt(i));
+		}
+
+		if(a==b){
+			document.write("it is palindrome");
+		}
+		else{
+			document.write("it is not a palindrome");	
+		}
+	</script>
+</body>
+</html>

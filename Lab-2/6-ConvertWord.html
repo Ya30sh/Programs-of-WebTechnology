@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		let a = parseInt(prompt("enter number between 0-3 digit"));
+		let b = a;
+		let d = a;
+		let count = 0;
+		while(b>0){
+			b=parseInt(b/10);
+			count++;
+		}
+
+		let c = new Array(count);
+		let i = 0;
+
+		while(a>0){
+			c[i] = a%10;
+			a = parseInt(a/10);
+			i++;
+		}
+
+		if(count==3){
+			switch (c[2]){
+				case 1:
+				document.write('Hundred ');
+				break;
+
+				case 2:
+				document.write('TwoHundred ');
+				break;
+
+				case 3:
+				document.write('ThreeHundred ');
+				break;
+
+				case 4:
+				document.write('Fourhundred ');
+				break;
+
+				case 5:
+				document.write('FiveHundred ');
+				break;
+
+				case 6:
+				document.write('Sixhundred ');
+				break;
+
+				case 7:
+				document.write('SevenHundred ');
+				break;
+
+				case 8:
+				document.write('EigthHundred ');
+				break;
+
+				case 9:
+				document.write('NineHundred ');
+				break;
+			} 
+		}
+
+		if(d>=11 && d<=19){
+		switch (d){
+			case 11:
+			document.write('Eleven ');
+			break;
+
+			case 12:
+			document.write('Tweleve ');
+			break;
+
+			case 13:
+			document.write('Thirteen ');
+			break;
+
+			case 14:
+			document.write('Fourteen ');
+			break;
+
+			case 15:
+			document.write('Fifteen ');
+			break;
+
+			case 16:
+			document.write('Sixteen ');
+			break;
+
+			case 17:
+			document.write('Seventeen ');
+			break;
+
+			case 18:
+			document.write('Eigthteen ');
+			break;
+
+			case 19:
+			document.write('Nineteen ');
+			break;
+		}
+	}
+	else{
+			switch (c[1]){
+				case 2:
+				document.write('Twenty ');
+				break;
+
+				case 3:
+				document.write('Thirty ');
+				break;
+
+				case 4:
+				document.write('Fourty ');
+				break;
+
+				case 5:
+				document.write('Fifty ');
+				break;
+
+				case 6:
+				document.write('Sixty ');
+				break;
+
+				case 7:
+				document.write('Seventy ');
+				break;
+
+				case 8:
+				document.write('Eigthty ');
+				break;
+
+				case 9:
+				document.write('Ninty ');
+				break;
+			} 
+
+
+		switch (c[0]){
+			case 1:
+			document.write('One ');
+			break;
+
+			case 2:
+			document.write('Two ');
+			break;
+
+			case 3:
+			document.write('Three ');
+			break;
+
+			case 4:
+			document.write('Four ');
+			break;
+
+			case 5:
+			document.write('Five ');
+			break;
+
+			case 6:
+			document.write('Six ');
+			break;
+
+			case 7:
+			document.write('Seven ');
+			break;
+
+			case 8:
+			document.write('Eigth ');
+			break;
+
+			case 9:
+			document.write('Nine ');
+			break;
+		}
+
+		if(d==0){
+				document.write('Zero');
+		}
+	}
+	</script>
+</body>
+</html>
